@@ -1,6 +1,6 @@
 <?php
 
-namespace PierreMiniggio\MP4YoutubeVideoDownloader\Youtube;
+namespace PierreMiniggio\MP4YoutubeVideoDownloader;
 
 use Exception;
 use YouTube\YouTubeDownloader;

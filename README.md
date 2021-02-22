@@ -1,4 +1,4 @@
-# php-vegas-renderer
+# php-mp4-youtube-video-downloader
 
 Install using composer :
 ```
@@ -7,14 +7,12 @@ composer require pierreminiggio/mp4-youtube-video-downloader
 
 ```php
 
-use PierreMiniggio\MP4YoutubeVideoDownloader\FrFrVersion170Build387\Template\WMV\WindowsMediaVideoV11\WMVVideoHd108030p8Mbitss;
-use PierreMiniggio\MP4YoutubeVideoDownloader\MP4YoutubeVideoDownloader;
+use PierreMiniggio\MP4YoutubeVideoDownloader\Downloader;
 
-$renderer = new MP4YoutubeVideoDownloader('C:\\Program Files\\VEGAS\\VEGAS Pro 17.0\\vegas170.exe');
-$renderer->render(
-    'F:\\videos\\vlogs\\test\\projet.veg',
-    new WMVVideoHd108030p8Mbitss(),
-    'F:\\videos\\vlogs\\test\\projet.wmv'
+$downloader = new Downloader();
+$downloader->download(
+    'https://www.youtube.com/watch?v=KIK3azN4w34',
+    __DIR__ . DIRECTORY_SEPARATOR . 'video.mp4'
 );
 
 ```

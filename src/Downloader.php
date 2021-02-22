@@ -1,10 +1,10 @@
 <?php
 
-namespace PierreMiniggio\MP4YoutubeVideoDownloader\Youtube;
+namespace PierreMiniggio\MP4YoutubeVideoDownloader;
 
 use Exception;
 
-class VideoFileDownloader
+class Downloader
 {
 
     private BestDownloadLinkFinder $finder;
