@@ -9,9 +9,9 @@ class Downloader
 
     private BestDownloadLinkFinder $finder;
 
-    public function __construct()
+    public function __construct(?Repository $yt1dApiGithubRepository = null)
     {
-        $this->finder = new BestDownloadLinkFinder();
+        $this->finder = new BestDownloadLinkFinder($yt1dApiGithubRepository);
     }
 
     /**
