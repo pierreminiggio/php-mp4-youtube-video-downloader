@@ -11,7 +11,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": "^7.2 || ^8.0",
-        "athlon1600/youtube-downloader": "dev-master",
+        "athlon1600/youtube-downloader": "^4.0",
         "pierreminiggio/github-action-run-starter-and-artifact-downloader": "^2.0"
     },
     "autoload": {

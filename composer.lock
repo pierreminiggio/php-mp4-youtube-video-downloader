@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65a3e36c52f9eb5b2e7268ec6e15f73e",
+    "content-hash": "0108fffdd8f1116b4be45dd1d0f892d4",
     "packages": [
         {
             "name": "athlon1600/php-curl-client",
@@ -84,16 +84,16 @@
         },
         {
             "name": "athlon1600/youtube-downloader",
-            "version": "dev-master",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Athlon1600/youtube-downloader.git",
-                "reference": "215b2b74f5eea5a1e8c1b9ada28c72ca35e5ab4f"
+                "reference": "3e59fc1be08be1ece9b121ae6b20b2e46b7a9c38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Athlon1600/youtube-downloader/zipball/215b2b74f5eea5a1e8c1b9ada28c72ca35e5ab4f",
-                "reference": "215b2b74f5eea5a1e8c1b9ada28c72ca35e5ab4f",
+                "url": "https://api.github.com/repos/Athlon1600/youtube-downloader/zipball/3e59fc1be08be1ece9b121ae6b20b2e46b7a9c38",
+                "reference": "3e59fc1be08be1ece9b121ae6b20b2e46b7a9c38",
                 "shasum": ""
             },
             "require": {
@@ -105,7 +105,6 @@
             "require-dev": {
                 "phpunit/phpunit": "^8.0 || ^9.0 || ^10.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -124,9 +123,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Athlon1600/youtube-downloader/issues",
-                "source": "https://github.com/Athlon1600/youtube-downloader/tree/master"
+                "source": "https://github.com/Athlon1600/youtube-downloader/tree/v4.0.0"
             },
-            "time": "2023-11-12T22:12:12+00:00"
+            "time": "2023-11-12T21:57:04+00:00"
         },
         {
             "name": "pierreminiggio/github-action-artifact-downloader",
@@ -473,9 +472,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "athlon1600/youtube-downloader": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
