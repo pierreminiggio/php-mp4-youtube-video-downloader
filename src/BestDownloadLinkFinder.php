@@ -66,11 +66,12 @@ class BestDownloadLinkFinder
         }
 
         $artifacts = $this->githubActionRunStarterAndArtifactDownloader->runActionAndGetArtifacts(
-            $this->yt1dApiGithubRepository->token,
-            $this->yt1dApiGithubRepository->owner,
-            $this->yt1dApiGithubRepository->repo,
-            'get-link.yml',
-            60
+            token: $this->yt1dApiGithubRepository->token,
+            owner: $this->yt1dApiGithubRepository->owner,
+            repo: $this->yt1dApiGithubRepository->repo,
+            workflowIdOrWorkflowFileName: 'get-link.yml',
+            refreshTime: 60,
+            inputs: ['link' => $youtubeLink]
         );
 
         if (! $artifacts) {
