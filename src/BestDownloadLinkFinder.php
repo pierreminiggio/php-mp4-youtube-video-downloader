@@ -5,6 +5,8 @@ namespace PierreMiniggio\MP4YoutubeVideoDownloader;
 use Exception;
 use PierreMiniggio\GithubActionRunStarterAndArtifactDownloader\GithubActionRunStarterAndArtifactDownloader;
 use PierreMiniggio\GithubActionRunStarterAndArtifactDownloader\GithubActionRunStarterAndArtifactDownloaderFactory;
+use Throwable;
+use YouTube\Exception\VideoNotFoundException;
 use YouTube\YouTubeDownloader;
 
 class BestDownloadLinkFinder
@@ -29,7 +31,13 @@ class BestDownloadLinkFinder
     public function find(string $youtubeLink): string
     {
         // Try YouTubeDownloader
-        $links = $this->yt->getDownloadLinks($youtubeLink);
+        try {
+            $links = $this->yt->getDownloadLinks($youtubeLink);
+        } catch (VideoNotFoundException $e) {
+            $links = []; // Sometimes it can't find the video for some reason
+        } catch (Throwable $e) {
+            throw $e;
+        }
 
         $bestFormat = 0;
         $bestLink = null;
